@@ -49,9 +49,6 @@
 		  "elem4"
 		  "elem5";
 	  }
-	body{
-		width:140%;
-	}
 	header{
 		flex-direction: column;
 	}
