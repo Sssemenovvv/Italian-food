@@ -23,14 +23,38 @@ html {
 	background: blanchedalmond;
 	padding: 14em 1em;
 }
+.title{
+	grid-area: title;
+  }
+  .elem1 {
+	grid-area: elem1;
+  }
+  
+  .elem2 {
+	grid-area: elem2;
+  }
+  
+  .elem3 {
+	grid-area: elem3;
+  }
+  
+  .elem4 {
+	grid-area: elem4;
+  }
+  
+  .elem5 {
+	grid-area: elem5;
+	justify-self: center;
+  }
 .form_task3 {
 	background: blanchedalmond;
 	color: black;
 	padding: 20px;
 	display: grid;
 	grid-template-columns: repeat(2, minmax(200px, 400px));
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
 	grid-template-areas:
+	  "title title"
 	  "elem1 elem2"
 	  "elem3 elem4"
 	  "elem5 elem5";
@@ -72,27 +96,6 @@ html {
 	color: white;
   }
   
-  
-  .elem1 {
-	grid-area: elem1;
-  }
-  
-  .elem2 {
-	grid-area: elem2;
-  }
-  
-  .elem3 {
-	grid-area: elem3;
-  }
-  
-  .elem4 {
-	grid-area: elem4;
-  }
-  
-  .elem5 {
-	grid-area: elem5;
-	justify-self: center;
-  }
   
   .button1 {
 	border-radius: 3px;
