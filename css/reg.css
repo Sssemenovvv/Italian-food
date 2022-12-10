@@ -46,6 +46,12 @@ html {
 	grid-area: elem5;
 	justify-self: center;
   }
+  .elem6{
+	grid-area: elem6;
+  }
+  .elem7{
+	grid-area: elem7;
+  }
 .form_task3 {
 	background: blanchedalmond;
 	color: black;
@@ -57,10 +63,12 @@ html {
 	  "title title"
 	  "elem1 elem2"
 	  "elem3 elem4"
-	  "elem5 elem5";
+	  "elem5 elem5"
+	  "elem6 elem6"
+	  "elem7 elem7";
 	column-gap: 40px;
 	row-gap: 30px;
-	justify-content: center;
+	text-align: center;
   }
   
   .form_task3 h1 {
@@ -121,17 +129,54 @@ html {
 	top: -15px;
 	left:10px;
   }
-  /*
-  @media (max-width: 712px) {
-	.form_task3 {
-	  grid-template-columns: 1fr;
-	  grid-template-rows: repeat(5, 1fr);
-	  grid-template-areas:
-		"elem1"
-		"elem2"
-		"elem3"
-		"elem4"
-		"elem5";
-	}
-  }
-  */
+
+
+  .capcha {
+    width: 350px;
+    height: 80px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    /*user-select: none;*/
+}
+
+.letter {
+    font-size: 60px;
+    position: absolute;
+    color: #272848;
+    display: block;
+}
+
+.input_capch {
+    background: white;
+    padding: 5px 10px;
+}
+
+.send_capch {
+    color: saddlebrown;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+
+.send_capch:not(:disabled):hover {
+    color: white;
+    background: saddlebrown;
+}
+
+.singIn {
+    color: white;
+    background: saddlebrown;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.singIn:disabled,
+.send_capch:disabled {
+    background: grey;
+}

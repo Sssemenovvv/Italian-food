@@ -38,12 +38,7 @@
 }
 
 
-/*@media (max-width: 1439px) {
-	body{
-		width:140%;
-	}
-	
-}*/
+
 @media (max-width: 1400px) {
 	.form_task3 {
 		grid-template-columns: 1fr;
