@@ -60,16 +60,19 @@
 	}
 	nav{
 		flex-direction: column;
-		row-gap: 40px;
+		row-gap: 10px;
 	}
 	nav a{
-		font-size: large;
+		font-size:larger;
 		padding: 1em 2em;
-		margin: 0 1em;
+		margin: 0 0em;
 	}
 	.dropbtn{
-		font-size: large;
+		font-size: larger;
 		padding: 1em 2em;
-		margin: 0 1em;
+		margin: 0 0em;
+	}
+	.dropdown{
+		padding: 20px;
 	}
 }

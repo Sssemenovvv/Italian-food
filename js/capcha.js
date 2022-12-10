@@ -69,9 +69,9 @@ singIn.addEventListener('click', (e) => {
         e.preventDefault();
     }
     else if (pass1.value===pass2.value){
-        alert("Пароли не совпадают")
+        alert("Вы зарегистрировались!")
         e.preventDefault();
     }
     else
-    alert("Вы зарегистрировались!")
+    alert("Пароли не совпадают!")
 })
