@@ -1,0 +1,134 @@
+html {
+	background: url("../backgrounds/mainBackground.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+/* ========== Scrollbar ==========*/
+::-webkit-scrollbar {
+  width: 12px;
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, red, orange);
+  border-radius: 10px;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+#wrap {
+	background: blanchedalmond;
+	padding: 14em 1em;
+}
+.form_task3 {
+	background: blanchedalmond;
+	color: black;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(200px, 400px));
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-areas:
+	  "elem1 elem2"
+	  "elem3 elem4"
+	  "elem5 elem5";
+	column-gap: 40px;
+	row-gap: 30px;
+	justify-content: center;
+  }
+  
+  .form_task3 h1 {
+	font-size: 48px;
+	font-weight: bold;
+  }
+  
+  .grid_task3_elem {
+	color: black;
+	position: relative;
+  }
+  
+  .input {
+	background: saddlebrown;
+	padding: 10px 10px;
+	font-size: 16px;
+	margin-top: 10px;
+  }
+  
+  .max-size {
+	width: 100%;
+	background: transparent;
+	border-bottom: 2px solid saddlebrown;
+	transition: 0.5s;
+	position: relative;
+	z-index: 1;
+	color: transparent;
+  }
+  
+  .max-size:focus,
+  .max-size:hover {
+	background: saddlebrown;
+	color: white;
+  }
+  
+  
+  .elem1 {
+	grid-area: elem1;
+  }
+  
+  .elem2 {
+	grid-area: elem2;
+  }
+  
+  .elem3 {
+	grid-area: elem3;
+  }
+  
+  .elem4 {
+	grid-area: elem4;
+  }
+  
+  .elem5 {
+	grid-area: elem5;
+	justify-self: center;
+  }
+  
+  .button1 {
+	border-radius: 3px;
+	color: white;
+  }
+  
+  .button1:hover {
+	background: saddlebrown;
+	opacity: 0.6;
+  }
+  
+  
+  .grid_task3_elem h3 {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	transition: 0.5s;
+	z-index: 0;
+  }
+  
+  .max-size:focus+h3,
+  .max-size:hover+h3 {
+	top: -15px;
+	left:10px;
+  }
+  /*
+  @media (max-width: 712px) {
+	.form_task3 {
+	  grid-template-columns: 1fr;
+	  grid-template-rows: repeat(5, 1fr);
+	  grid-template-areas:
+		"elem1"
+		"elem2"
+		"elem3"
+		"elem4"
+		"elem5";
+	}
+  }
+  */
