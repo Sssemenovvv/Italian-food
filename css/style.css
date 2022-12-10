@@ -85,9 +85,9 @@ header a {
 }
 nav a {
 	text-decoration: none;
-	color: black;
+	color: white;
 	/* border: 2px solid black; */
-	background: white;
+	background: saddlebrown;
 	padding: 1em 2em;
 	margin: 0 1em;
 	transition: 0.3s;

@@ -72,6 +72,12 @@
 		padding: 1em 2em;
 		margin: 0 0em;
 	}
+	.dropdown-content a:hover {background-color: #ddd;}
+  	.dropdown:hover .dropdown-content {display: none;}
+  	.dropdown:hover .dropbtn {
+    background-color: blanchedalmond;
+    color: black;
+}
 	.dropdown{
 		padding: 20px;
 	}
