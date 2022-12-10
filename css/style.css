@@ -166,7 +166,8 @@ footer {
 .dropbtn {
     background-color: saddlebrown;
     color: white;
-    padding: 16px;
+    padding: 1em 2em;
+	margin: 0 1em;
     font-size: 16px;
     border: none;
   }

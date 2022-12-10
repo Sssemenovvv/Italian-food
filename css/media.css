@@ -49,13 +49,27 @@
 		  "elem2"
 		  "elem3"
 		  "elem4"
-		  "elem5";
+		  "elem5"
+		  "elem6"
+		  "elem7";
 	  }
 	
 	header{
 		flex-direction: column;
+		row-gap: 15px;
 	}
 	nav{
 		flex-direction: column;
+		row-gap: 40px;
+	}
+	nav a{
+		font-size: large;
+		padding: 1em 2em;
+		margin: 0 1em;
+	}
+	.dropbtn{
+		font-size: large;
+		padding: 1em 2em;
+		margin: 0 1em;
 	}
 }
