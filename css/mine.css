@@ -1,3 +1,22 @@
+html {
+	background: url("../backgrounds/mainBackground.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient((blanchedalmond,saddlebrown));
+  border-radius: 10px;
+}
+html {
+	scroll-behavior: smooth;
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
@@ -65,9 +84,15 @@ footer {
 	margin: 2em 15%; 
 	padding: 1em 2em;;
 	flex-direction: column;
-	background: #ffffff;
+	background: blanchedalmond;
 	box-shadow: 10px 20px rgba(0, 0, 0, 0.7);
 	border-radius: 2em;
+}
+.recipes{
+    margin: 3em 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 #wrapper, #desc {
 	margin: 1em 1em 1em 1em;
@@ -76,44 +101,6 @@ footer {
 #desc p {
 	margin: 0 0 1em 0;
 	text-align: justify;
-}
-
-.card {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0 0 2em 0;
-}
-.card-txt {
-	padding: 0 2em;
-	text-align: justify;
-}
-.card-ph {
-	position: relative;
-	transition: 0.3s;
-}
-.card-ph:hover {
-	transform: translate(-5px, -5px);
-}
-.card-ph img {
-	border-radius: 1em;
-	box-shadow: 5px 10px rgba(0, 0, 0, 0.7);
-}
-.card-ph h2 {
-	position: absolute;
-	bottom: 0.8em;
-	left: 0.6em;
-	
-	background: rgba(0, 0, 0, 0.7);
-	border-radius: 0.3em;
-	padding: 0 0.5em;
-	
-	color: white;
-
-}
-.card-txt h2 {
-	text-align: left;
-	margin: 0 0 0.3em 0;
 }
 .dropbtn {
     background-color: saddlebrown;
@@ -145,4 +132,55 @@ footer {
   .dropdown:hover .dropbtn {
     background-color: blanchedalmond;
     color: black;
+}
+div{
+    margin: 10px;
+}
+.cool_img {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+ 
+.cool_img .info {
+    position: absolute;
+    bottom: 0;
+}
+ 
+.cool_img .info span {
+    display: block;
+    position: relative;
+    top: 130px;
+    color: #FFFFFF;
+    background: #000000;
+    transition-delay: 0;
+    transition-duration: 0.3s;
+}
+ 
+.cool_img .info .info_title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px 5px 0 0;
+    opacity: 0.8;
+}
+ 
+.cool_img .info .info_text {
+    font-size: 12px;
+    padding: 10px;
+    opacity: 0.6;
+}
+ 
+.cool_img:hover .info span, .cool_img:focus .info span {
+    top: 0;
+}
+ 
+.cool_img:hover .info .info_title {
+    transition-delay: 0.15s;
+}
+ 
+.cool_img:hover .info .info_text {
+    transition-delay: 0.25s;
 }

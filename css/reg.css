@@ -6,7 +6,6 @@ html {
   	background-size: cover;
 }
 
-/* ========== Scrollbar ==========*/
 ::-webkit-scrollbar {
   width: 12px;
   background: none;
@@ -132,21 +131,22 @@ html {
 
 
   .capcha {
+    
     width: 350px;
     height: 80px;
-    background: white;
+    background: url(../photos/Capcha.png);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    /*user-select: none;*/
+    user-select: none;
 }
 
 .letter {
     font-size: 60px;
     position: absolute;
-    color: #272848;
+    color: black;
     display: block;
 }
 
