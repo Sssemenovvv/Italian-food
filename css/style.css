@@ -19,7 +19,6 @@ header, nav, footer, section {
 	justify-content: center;
 }
 
-/* -----  ----- */
 header {
 	display: flex;
 	flex-direction: row;
@@ -44,7 +43,6 @@ header a {
 nav a {
 	text-decoration: none;
 	color: white;
-	/* border: 2px solid black; */
 	background: saddlebrown;
 	padding: 1em 2em;
 	margin: 0 1em;

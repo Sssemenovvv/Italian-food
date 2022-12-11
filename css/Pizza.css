@@ -6,7 +6,6 @@ html {
   background-size: cover;
 }
 
-/* ========== Scrollbar ==========*/
 ::-webkit-scrollbar {
   width: 12px;
   background: none;
