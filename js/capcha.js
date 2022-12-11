@@ -4,7 +4,6 @@ let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 let key = ''
 let textCapch = document.querySelector('.input_capch')
 let button = document.querySelector('.send_capch')
-let sign = '+-*/'
 let singIn = document.querySelector('.singIn')
 var name1 = document.querySelector('#name')
 let email = document.querySelector('#email')
@@ -36,7 +35,6 @@ const isEmpty = (str) => {
 }
 
 generateTextCapcha()
-console.log(key);
 
 button.addEventListener('click', () => {
     console.log(isEmpty(textCapch.value));
